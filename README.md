@@ -22,14 +22,14 @@ And seriously its effing hard to port this.
 
 ## Images
 
-![img3](.imgsrc/3.png)
+![img3](imgsrc/3.png)
 *main screen with material wallpaper*
 
 ### And some Other Screenshots
 
-![img2](.imgsrc/2.png)
+![img2](imgsrc/2.png)
 
-![img1](.imgsrc/1.png)
+![img1](imgsrc/1.png)
 
 ## To Run Distro Related Process
 
