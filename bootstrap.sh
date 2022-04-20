@@ -102,16 +102,18 @@ case $yn in
          mkdir $HOME/Downloads
          mkdir $HOME/Templates
          mkdir $HOME/Public
+         mkdir $HOME/.icons
          mkdir $HOME/Pictures
          mkdir $HOME/Videos
          mkdir $HOME/storage/music
-         tar -xf configuration.tar.gz -C $HOME/.config
+         tar -xf config/config.tar.gz -C $HOME/.config
          cp config/geany/black.conf $HOME/.config/geany/colorschemes
          cp config/Debian.desktop $HOME/Desktop
          termux-setup-storage
          
          ln -s $HOME/storage/music $HOME/Music
          echo "Done, going towards your wallpaper"
+         bash icon.sh
          bash wallpaper-you.sh
     ;;
     [Nn]* )

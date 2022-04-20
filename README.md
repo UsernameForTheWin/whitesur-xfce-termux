@@ -1,6 +1,6 @@
 # Termux-XFCE WhiteSur Theme
 
-![i](https://img.shields.io/badge/status-beta-red?style=flat-square&logo=appveyor) ![v](https://img.shields.io/badge/Version-1.0-blue?style=flat-square&logo=appveyor)
+![i](https://img.shields.io/badge/status-beta-red?style=flat-square&logo=appveyor) ![v](https://img.shields.io/badge/Version-1.1-blue?style=flat-square&logo=appveyor)
 
 An XFCE WhiteSur theme for Termux Edition, with thanks to vince here
 
