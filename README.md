@@ -18,7 +18,8 @@ And seriously its effing hard to port this.
 
 ## Plans
 
-- Adding Fonts and Arrows
+- ~~Adding Fonts~~ (Currently Impossible) 
+
 
 ## Images
 
