@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Debian
+Comment=
+Exec=proot-distro login debian
+Icon=xfwm4-default
+Path=
+Terminal=true
+StartupNotify=true

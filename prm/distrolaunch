@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+read -p "$(tput setaf 2)Enter Distro here [only input accepted: alpine / arch / debian / fedora / manjaro-aarch64 / opensuse / ubuntu / void )>> " di
+
+if (proot-distro login $di)
+then
+echo "0"
+else
+proot-distro install $di
+proot-distro login $di
+fi

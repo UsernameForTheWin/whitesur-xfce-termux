@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#This VNC manager will proceed to execute Window
+#There are other strings that are stuck in '#' , remove them if there's an issue
+
+#Here to Launch a Terminal named 'aterm'
+#aterm -geometry 80x24+10+10 -ls &
+
+#Here to Launch XFCE Process
+# Requires xorg-twm
+xfce4-session &
+xhost + &
