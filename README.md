@@ -29,7 +29,7 @@ chmod u+x *.sh  &&  chmod u+x libvnc/*.sh  && bash -vvvv bootstrap.sh
 ## Fixes and Additions
 
  - Ncurses added
- - Added ability to install Debian Automatically (Debian is good at ARM than Ubuntu in some areas [LLVMPIPE port])
+ - Added ability to install Debian Automatically ~~(Debian is good at ARM than Ubuntu in some areas [LLVMPIPE port])~~
  - Fix towards icon.sh stuck on loop
  - Fix when Rem (ReZero) Did not get extracted ~~i forgor about rem~~ its just a typo error in the script.
  - Fix when SpyXFamily Images didn't get included ~~i forgor the same damn thing~~ lines of code for it was missing
