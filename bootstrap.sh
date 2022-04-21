@@ -1,5 +1,8 @@
 #!/bin/bash
+#Chmod Headsup
+chmod u+x *.sh
 #ColorGrade
+apt install ncurses-utils -y
 red_f=$(tput setaf 1)
 red_b=$(tput setab 1)
 green_f=$(tput setaf 2)
@@ -110,9 +113,10 @@ case $yn in
          cp config/geany/black.conf $HOME/.config/geany/colorschemes
          cp config/Debian.desktop $HOME/Desktop
          termux-setup-storage
+         proot-distro install debian
          
          ln -s $HOME/storage/music $HOME/Music
-         echo "Done, going towards your wallpaper"
+         echo "Done"
          bash icon.sh
          bash wallpaper-you.sh
     ;;

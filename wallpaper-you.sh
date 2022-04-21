@@ -23,8 +23,7 @@ case $yn in
       if (  find $PREFIX/share/backgrounds/xfce/ai_hayasaka_xfce.jpg )
       then
       clear
-      echo "Good, Starting VNC Session"
-      echo "Meet Ayaka Senpai\!"
+Blaze YT
       sleep 3
       startvnc
       else

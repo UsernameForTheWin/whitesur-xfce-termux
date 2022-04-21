@@ -64,18 +64,40 @@ case $ico in
        7)
        rm -rf $HONE/.icons 
        mkdir $HOME/.icons
-       tar -xf iconpacks/We10X-black.tar.xz -C $PREFIX/share/icons
-       tar -xf iconpacks/We10X.tar.xz -C $PREFIX/share/icons
-       tar -xf iconpacks/Mkos-Big-Sur.tar.xz -C $PREFIX/share/icons
-       tar -xf iconpacks/deepin2022-Dark.tar.xz -C $PREFIX/share/icons
-      tar -xf iconpacks/deepin2022.tar.xz -C $PREFIX/share/icons
-      tar -xf iconpacks/01-WhiteSur.tar.xz -C $PREFIX/share/icons
-      tar -xf iconpacks/Win10Sur-black.tar.xz -C $PREFIX/share/icons 
-        tar -xf iconpacks/Win10Sur.tar.xz -C $PREFIX/share/icons
-        tar -xf iconpacks/Win11-black.tar.xz -C $PREFIX/share/icons 
-       tar -xf iconpacks/Win11.tar.xz -C $PREFIX/share/icons
+       tar -xvf iconpacks/We10X-black.tar.xz -C $PREFIX/share/icons
+       echo "1"
+       sleep 3
+       tar -xvf iconpacks/We10X.tar.xz -C $PREFIX/share/icons
+       echo "2"
+       sleep 3
+       tar -xfv iconpacks/Mkos-Big-Sur.tar.xz -C $PREFIX/share/icons
+       echo "3"
+       sleep 3
+       tar -xfv iconpacks/deepin2022-Dark.tar.xz -C $PREFIX/share/icons
+       echo "4"
+       sleep 3
+      tar -xfv iconpacks/deepin2022.tar.xz -C $PREFIX/share/icons
+      echo "5"
+      sleep 3
+      tar -xvf iconpacks/01-WhiteSur.tar.xz -C $PREFIX/share/icons
+      echo "6"
+      sleep 3
+      tar -xfv iconpacks/Win10Sur-black.tar.xz -C $PREFIX/share/icons 
+      echo "7"
+      sleep 3
+        tar -xvf iconpacks/Win10Sur.tar.xz -C $PREFIX/share/icons
+        echo "8"
+        sleep 3
+        tar -xvf iconpacks/Win11-black.tar.xz -C $PREFIX/share/icons 
+        echo "9"
+        sleep 3
+       tar -xfv iconpacks/Win11.tar.xz -C $PREFIX/share/icons
+       echo "10"
+       echo "done"
        arrow
        ;;
+      8) 
+      bash wallpaper-you.sh
      *)
        bash icon.sh
        ;;
