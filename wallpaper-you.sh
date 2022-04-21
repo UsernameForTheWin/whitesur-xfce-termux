@@ -19,7 +19,8 @@ case $yn in
         cp -r wp/MarinKitagawara/*    $PREFIX/share/backgrounds/xfce
         cp -r wp/MacOS/* $PREFIX/share/backgrounds/xfce
         cp -r wp/MaterialYou/*   $PREFIX/share/backgrounds/xfce
-        cp -r wp/RemReZero/*     $PREFIX/share/background/xfce
+        cp -r wp/RemReZero/*     $PREFIX/share/backgrounds/xfce
+        cp -r wp/spyxfamily/*    $PREFIX/share/backgrounds/xfce
       if (  find $PREFIX/share/backgrounds/xfce/ai_hayasaka_xfce.jpg )
       then
       clear
