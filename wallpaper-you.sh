@@ -26,6 +26,7 @@ case $yn in
       clear
 Blaze YT
       sleep 3
+      chmod +x $PREFIX/bin/startvnc
       startvnc
       else
       echo "Error Finding Extracted Data"
