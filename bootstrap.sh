@@ -1,7 +1,7 @@
 #!/bin/bash
 #Chmod Headsup
 #ColorGrade
-pkg i ncurses-utils x11-repo -y
+apt install ncurses-utils x11-repo -y
 red_f=$(tput setaf 1)
 red_b=$(tput setab 1)
 green_f=$(tput setaf 2)
@@ -64,11 +64,11 @@ tput sgr 0
 case $yn in
    [Yy]* )
    tput sgr0
-          echo -e "$green_f\Installing Necessary Stuff"
-          pkgs=(dbus* xorg* aterm librsvg proot proot-distro gnuplot xfce4 xfce4-goodies leafpad geany kvantum tsu audacious pulseaudio pavucontrol-qt tigervnc tigervnc-viewer otter-browser)
-for package in "${pkgs[@]}"; do
-pkg i $package && echo $package installed successfully
-done
+         echo -e "$green_f\Installing Necessary Stuff"
+         pkgs=(dbus* xorg* aterm librsvg proot proot-distro gnuplot xfce4 xfce4-goodies leafpad geany kvantum tsu audacious pulseaudio pavucontrol-qt tigervnc tigervnc-viewer otter-browser)
+         for package in "${pkgs[@]}"; do
+         apt install $package -y && echo $package installed successfully
+         done
          echo -e "$yellow_f$bold\Data Assets setup$norm"
          rm -rf $HOME/.backup
          mkdir $HOME/.backup
