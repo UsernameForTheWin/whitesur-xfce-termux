@@ -64,7 +64,7 @@ read -p "$bold$green_f>Install XFCE and themes? [y/n] >> $uline" yn
 tput sgr 0
 case $yn in
    [Yy]* )
-   tput sgr 0
+   tput sgr0
           echo -e "$green_f\Installing Necessary Stuff"
           apt update -y
           pkg update -y
