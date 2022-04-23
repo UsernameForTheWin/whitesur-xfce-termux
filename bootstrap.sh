@@ -1,5 +1,6 @@
 #!/bin/bash
 #Chmod Headsup
+chmod u+x *sh
 #ColorGrade
 apt install ncurses-utils x11-repo -y
 red_f=$(tput setaf 1)
