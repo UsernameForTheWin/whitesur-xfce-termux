@@ -60,26 +60,19 @@ EOF
 function optwp () {
   bash wallpaper-you.sh
 }
-read -p "$bold$green_f>Install XFCE and themes? >> $uline" yn
+read -p "$bold$green_f>Install XFCE and themes? [y/n] >> $uline" yn
 tput sgr 0
 case $yn in
    [Yy]* )
-   tput sgr0
+   tput sgr 0
           echo -e "$green_f\Installing Necessary Stuff"
           apt update -y
           pkg update -y
           pkg install x11-repo -y
-          apt update -y
-          apt install dbus* -y
-          apt install xorg* -y
-          apt install aterm -y
-          apt install librsvg -y
-          apt install proot-distro -y
-          apt install gnuplot -y
-          apt install proot-distro -y
-          apt install xfce4 xfce4-goodies leafpad geany kvantum tsu audacious pulseaudio pavucontrol-qt -y
-          apt install tigervnc tigervnc-viewer -y
-          apt install otter-browser -y
+         pack=(dbus* xorg* aterm librsvg proot-distro gnuplot xfce4 xfce4-goodies leafpad geany kvantum tsu audacious pulseaudio pavucontrol-qt tigervnc otter-browser)
+         for package in ${pack[@]}; do
+         apt install $package && echo -e "$green_f\package installed successfully" && tput sgr 0
+         done
          echo -e "$yellow_f$bold\Data Assets setup$norm"
          rm -rf $HOME/.backup
          mkdir $HOME/.backup
@@ -112,7 +105,9 @@ case $yn in
          tar -xf config/config.tar.gz -C $HOME/.config
          cp config/geany/black.conf $HOME/.config/geany/colorschemes
          cp config/Debian.desktop $HOME/Desktop
+         if [ ! -d ~/storage ]; then
          termux-setup-storage
+         fi
          proot-distro install debian
          
          ln -s $HOME/storage/music $HOME/Music
