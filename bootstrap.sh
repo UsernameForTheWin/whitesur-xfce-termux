@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 #Chmod Headsup
 #ColorGrade
 pkg i ncurses-utils x11-repo -y
