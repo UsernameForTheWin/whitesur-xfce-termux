@@ -71,7 +71,7 @@ case $yn in
           pkg install x11-repo -y
          pack=(dbus* xorg* aterm librsvg proot-distro gnuplot xfce4 xfce4-goodies leafpad geany kvantum tsu audacious pulseaudio pavucontrol-qt tigervnc otter-browser)
          for package in ${pack[@]}; do
-         apt install $package && echo -e "$green_f\package installed successfully" && tput sgr 0
+         apt install $package -y && echo -e "$green_f\package installed successfully" && tput sgr 0
          done
          echo -e "$yellow_f$bold\Data Assets setup$norm"
          rm -rf $HOME/.backup
