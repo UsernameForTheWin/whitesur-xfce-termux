@@ -97,8 +97,7 @@ case $ico in
        arrow
        ;;
       8) 
-      bash wallpaper-you.sh
+      bash wallpaper-you.sh;;
      *)
-       bash icon.sh
-       ;;
+       bash icon.sh;;
   esac
